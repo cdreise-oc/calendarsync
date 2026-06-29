@@ -1,0 +1,14 @@
+{
+  "name": "empty dest — everything is created",
+  "config": { "copyLocation": true, "copyNotes": false },
+  "source": [
+    { "externalId": "A1", "title": "Standup", "start": "2026-07-01T09:00:00.000Z", "end": "2026-07-01T09:15:00.000Z", "isAllDay": false, "location": "Room 1" },
+    { "externalId": "B2", "title": "Service", "start": "2026-07-03T10:00:00.000Z", "end": "2026-07-03T11:30:00.000Z", "isAllDay": false, "location": "" }
+  ],
+  "dest": [],
+  "expected": {
+    "create": ["A1|2026-07-01T09:00:00.000Z", "B2|2026-07-03T10:00:00.000Z"],
+    "update": [],
+    "delete": []
+  }
+}

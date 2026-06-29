@@ -1,0 +1,17 @@
+{
+  "name": "recurring series — expanded occurrences are distinct by start",
+  "config": { "copyLocation": true, "copyNotes": false },
+  "source": [
+    { "externalId": "R1", "title": "Weekly", "start": "2026-07-06T08:00:00.000Z", "end": "2026-07-06T08:30:00.000Z", "isAllDay": false, "location": "" },
+    { "externalId": "R1", "title": "Weekly", "start": "2026-07-13T08:00:00.000Z", "end": "2026-07-13T08:30:00.000Z", "isAllDay": false, "location": "" },
+    { "externalId": "R1", "title": "Weekly", "start": "2026-07-20T08:00:00.000Z", "end": "2026-07-20T08:30:00.000Z", "isAllDay": false, "location": "" }
+  ],
+  "dest": [
+    { "url": "x-eccl-sync:R1|2026-07-06T08:00:00.000Z", "title": "Weekly", "start": "2026-07-06T08:00:00.000Z", "end": "2026-07-06T08:30:00.000Z", "isAllDay": false, "location": "" }
+  ],
+  "expected": {
+    "create": ["R1|2026-07-13T08:00:00.000Z", "R1|2026-07-20T08:00:00.000Z"],
+    "update": [],
+    "delete": []
+  }
+}

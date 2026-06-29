@@ -1,0 +1,11 @@
+{
+  "name": "dest already mirrors source — no operations",
+  "config": { "copyLocation": true, "copyNotes": false },
+  "source": [
+    { "externalId": "A1", "title": "Standup", "start": "2026-07-01T09:00:00.000Z", "end": "2026-07-01T09:15:00.000Z", "isAllDay": false, "location": "Room 1" }
+  ],
+  "dest": [
+    { "url": "x-eccl-sync:A1|2026-07-01T09:00:00.000Z", "title": "Standup", "start": "2026-07-01T09:00:00.000Z", "end": "2026-07-01T09:15:00.000Z", "isAllDay": false, "location": "Room 1" }
+  ],
+  "expected": { "create": [], "update": [], "delete": [] }
+}
