@@ -5,6 +5,9 @@ calendar under your Supstance M365 account, so it shows on your personal iPhone
 without enrolling the phone and without touching the Ecclesia tenant. Hourly,
 idempotent, lightweight, no network calls.
 
+> **Just want it running on your Mac?** Follow **[SETUP.md](SETUP.md)** — a
+> copy-paste, step-by-step guide with zero jargon.
+
 It reads the local macOS Calendar store (which your existing Exchange account
 already populates) via EventKit and writes to the local Supstance calendar
 (which macOS already syncs to M365). No app registration, no Graph, no OAuth,
