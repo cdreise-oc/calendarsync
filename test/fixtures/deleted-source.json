@@ -1,0 +1,16 @@
+{
+  "name": "source event gone — its mirror is deleted",
+  "config": { "copyLocation": true, "copyNotes": false },
+  "source": [
+    { "externalId": "A1", "title": "Standup", "start": "2026-07-01T09:00:00.000Z", "end": "2026-07-01T09:15:00.000Z", "isAllDay": false, "location": "Room 1" }
+  ],
+  "dest": [
+    { "url": "x-eccl-sync:A1|2026-07-01T09:00:00.000Z", "title": "Standup", "start": "2026-07-01T09:00:00.000Z", "end": "2026-07-01T09:15:00.000Z", "isAllDay": false, "location": "Room 1" },
+    { "url": "x-eccl-sync:Z9|2026-07-02T12:00:00.000Z", "title": "Cancelled Thing", "start": "2026-07-02T12:00:00.000Z", "end": "2026-07-02T13:00:00.000Z", "isAllDay": false, "location": "" }
+  ],
+  "expected": {
+    "create": [],
+    "update": [],
+    "delete": ["Z9|2026-07-02T12:00:00.000Z"]
+  }
+}

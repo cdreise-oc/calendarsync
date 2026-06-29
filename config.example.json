@@ -1,0 +1,11 @@
+{
+  "sourceAccount": "<Ecclesia account title from list mode>",
+  "sourceCalendar": "<Ecclesia calendar title>",
+  "destAccount": "<Supstance account title>",
+  "destCalendar": "Ecclesia",
+  "windowDaysBack": 7,
+  "windowDaysAhead": 90,
+  "copyNotes": false,
+  "copyAlarms": false,
+  "copyLocation": true
+}

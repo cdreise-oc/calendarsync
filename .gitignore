@@ -1,0 +1,5 @@
+node_modules/
+# local runtime artifacts (never committed; live in ~/EcclesiaSync on the Mac)
+config.json
+*.log
+.DS_Store

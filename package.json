@@ -1,0 +1,11 @@
+{
+  "name": "eccl-calsync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ECAL v1 — one-way macOS calendar mirror (pure reconcile logic, Node-testable)",
+  "scripts": {
+    "test": "node --test",
+    "build": "bash build/build.sh"
+  },
+  "license": "UNLICENSED"
+}

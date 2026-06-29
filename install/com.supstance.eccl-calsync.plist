@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.supstance.eccl-calsync</string>
+
+    <!-- osascript runs the deployed single-file JXA build. __HOME__ is
+         substituted by install.sh with the user's home directory. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/osascript</string>
+        <string>-l</string>
+        <string>JavaScript</string>
+        <string>__HOME__/EcclesiaSync/eccl-calsync.js</string>
+        <string>once</string>
+    </array>
+
+    <!-- Hourly at minute 5, in the user's login session. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Minute</key>
+        <integer>5</integer>
+    </dict>
+
+    <!-- Catch up on the next load/wake after sleep or logout. -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>__HOME__/EcclesiaSync/sync.log</string>
+    <key>StandardErrorPath</key>
+    <string>__HOME__/EcclesiaSync/sync.log</string>
+
+    <key>ProcessType</key>
+    <string>Background</string>
+</dict>
+</plist>
